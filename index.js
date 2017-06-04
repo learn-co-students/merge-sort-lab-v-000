@@ -16,7 +16,7 @@ function merge(firstSortedArray, secondSortedArray) {
 }
 
 function mergeSort(unsortedArray) {
-  var midpoint = unsortedArray.length/2;
+  var midpoint = Math.floor(unsortedArray.length/2);
   if (unsortedArray.length < 2) {
     return unsortedArray;
   }
