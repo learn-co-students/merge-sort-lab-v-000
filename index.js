@@ -18,13 +18,11 @@ function merge(firstHalf, secondHalf) {
 function mergeSort(arr) {
   let midPoint = arr.length / 2,
       firstHalf = arr.slice(0, midPoint),
-      secondHalf = arr.slice(midPoint),
-      sorted;
-
+      secondHalf = arr.slice(midPoint);
+      
   if (arr.length < 2) {
     return arr;
   } else {
-    sorted = merge(mergeSort(firstHalf), mergeSort(secondHalf));
+    return merge(mergeSort(firstHalf), mergeSort(secondHalf));
   }
-   return sorted;
 }
