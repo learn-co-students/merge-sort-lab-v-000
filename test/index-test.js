@@ -3,7 +3,7 @@ var sinon = require('sinon');
 // change to give addresses of head,
 // write function called get head.
 
-describe('#findMinAndRemove', function() {
+describe('#findMinAndRemoveSorted', function() {
   it("should return the smallest element of an array", function() {
     let array = [2, 3, 4, 5, 6, 7]
     expect(findMinAndRemoveSorted(array)).toEqual(2)
