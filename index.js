@@ -32,5 +32,5 @@ function mergeSort(array) {
   let secondHalf = array.slice(midpoint, array.length)
 
 console.log('array in mergeSort ' + array)
-  return merge(+, mergeSort(secondHalf))
+  return merge(mergeSort(firstHalf), mergeSort(secondHalf))
 }
