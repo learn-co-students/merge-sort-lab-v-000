@@ -5,7 +5,7 @@ function findMinAndRemoveSorted(array) {
 function merge(firstArray, secondArray) {
   let combinedArray = []
   let min
-
+console.log('fristArray and second in merger function ' + firstArray + ' ' + secondArray)
   while (firstArray.length > 0 && secondArray.length > 0 ) {
   if (firstArray[0] < secondArray[0]) {
    min = firstArray.shift()
@@ -26,12 +26,11 @@ function mergeSort(array) {
 
     return array
   }
-  
+
   let midpoint = array.length/2
   let firstHalf = array.slice(0, midpoint)
   let secondHalf = array.slice(midpoint, array.length)
 
-
-
-  return merge(mergeSort(firstHalf), mergeSort(secondHalf))
+console.log('array in mergeSort ' + array)
+  return merge(+, mergeSort(secondHalf))
 }
