@@ -20,10 +20,8 @@ function merge(firstHalf, secondHalf) {
   while (firstHalf.length && secondHalf.length) {
     if(firstHalf[0] < secondHalf[0]) {
       minElement = findMinAndRemoveSorted(firstHalf)
-      
     } else {
       minElement = findMinAndRemoveSorted(secondHalf)
-      
     }
     sortedArray.push(minElement)
   }
