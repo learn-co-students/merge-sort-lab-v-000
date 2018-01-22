@@ -27,7 +27,7 @@ function merge(firstArray, secondArray){
 }
 
 function mergeSort(array){
-  var midpoint = Math.floor(array.length / 2)
+  var midpoint = array.length / 2
   var firstArray = array.slice(0, midpoint)
   var secondArray = array.slice(midpoint, array.length)
   if(array.length < 2){
