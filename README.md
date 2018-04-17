@@ -6,6 +6,6 @@ In this lab we will ask you to implement merge sort.  We will break this into st
 2. Implement the merge function to combine two sorted arrays into one larger array.
 3. Implement the mergeSort algorithm using the previous functions that you wrote. 
 
-You got this.
+You got this!
 
 ![](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/algorithms/smart-goggles.jpg)
