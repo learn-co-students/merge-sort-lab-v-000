@@ -9,11 +9,9 @@ function merge(arr1, arr2) {
 
   while (arr1.length !== 0 && arr2.length !== 0) {
     if (arr1[0] < arr2[0]) {
-      finalArr.push(arr1[0]);
-      arr1.shift();
+      finalArr.push(findMinAndRemoveSorted(arr1))
     } else {
-      finalArr.push(arr2[0]);
-      arr2.shift();
+      finalArr.push(findMinAndRemoveSorted(arr2))
     }
   }
   return finalArr.concat(arr1).concat(arr2)
