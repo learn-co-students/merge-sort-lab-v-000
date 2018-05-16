@@ -42,3 +42,5 @@ function mergeSort(unSortedArray){
 
 	return sorted;
 };
+
+https://jsbin.com/qoripuneza/edit?js,output
