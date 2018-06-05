@@ -22,5 +22,7 @@ function merge(firstArray, secondArray) {
         }
         sorted.push(currMin);
     }
+    console.log(firstArray);
+    console.log(secondArray);
     return sorted.concat(firstArray).concat(secondArray);
 }
