@@ -1,5 +1,4 @@
 function findMinAndRemoveSorted(array){
-  console.log(array)
   return array.shift()
 }
 
@@ -15,7 +14,6 @@ function merge(firstHalf, secondHalf){
       currentMin = findMinAndRemoveSorted(secondHalf);
       sorted.push(currentMin)
     }
-    console.log(`Sorted=${sorted}`)
   }
   return sorted.concat(firstHalf).concat(secondHalf)
 }
