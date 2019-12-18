@@ -13,7 +13,6 @@ function findMinAndRemoveSorted(array) {
 
 function merge(array1, array2) {
     let sortedArray = [];
-    let arraysLength = array1.length + array2.length;
     while (array1.length != 0 && array2.length != 0) {
         if (array1[0] < array2[0]) {
             sortedArray.push(array1.shift())
@@ -23,11 +22,6 @@ function merge(array1, array2) {
     }
     return sortedArray.concat(array1).concat(array2);
 }
-
-// arr1 = [1, 2, 5, 8];
-// arr2 = [3, 4, 6, 7];
-// console.log(merge(arr1, arr2));
-
 
 function mergeSort(array) {
     let midpoint = array.length/2
